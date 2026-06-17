@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио — user@mail.ru</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background:#b57cb6; font-family:'Verdana', sans-serif">
+  <header class="portfolio-header">
+    <div><h1 class="portfolio-name">user@mail.ru</h1>
+    <p class="portfolio-sub">Студенческое портфолио</p></div>
+  </header>
+  <nav class="portfolio-nav" id="main-nav">
+    <button class="nav-btn active" onclick="showSection('section-59', this)">О себе</button>
+    <button class="nav-btn" onclick="showSection('section-60', this)">Достижения</button>
+    <button class="nav-btn" onclick="showSection('section-61', this)">Работы</button>
+    <button class="nav-btn" onclick="showSection('section-62', this)">Документы</button>
+    <button class="nav-btn" onclick="showSection('section-63', this)">Я гражданин</button>
+  </nav>
+  <main class="portfolio-content">
+    <section id="section-59" class="portfolio-section" style="display:block">
+      <h2 class="section-heading">О себе</h2>
+      <div class="block-text">Я студент Екатеринбургского колледжа транспортного строительства</div>
+      <div class="block-image"><img src="images/4d97aa12-8993-4056-92a0-b498dce26f37.webp" alt="Моё фото"><p class="block-caption">Моё фото</p></div>
+      <div class="block-text">Характер спокойный, уравновешенный. Я довольно усидчива, люблю делать работу, требующую терпения, даже монотонную. В работу включаюсь медленно, переключаюсь с одного дела на другое. Когда я что-то делаю, то могу выполнять несколько дел одновременно, но обычно работаю не отвлекаясь.</div>
+    </section>
+    <section id="section-60" class="portfolio-section" style="display:none">
+      <h2 class="section-heading">Достижения</h2>
+      <div class="block-text">Мои дипломы и награды</div>
+
+    </section>
+    <section id="section-61" class="portfolio-section" style="display:none">
+      <h2 class="section-heading">Работы</h2>
+      <div class="block-link"><p class="link-label">Ссылка на мой аккаунт с работами на GitHub</p><a href="https://github.com/Skote616" target="_blank">🔗 https://github.com/Skote616</a></div>
+
+    </section>
+    <section id="section-62" class="portfolio-section" style="display:none">
+      <h2 class="section-heading">Документы</h2>
+      <div class="block-image"><img src="images/dbc1fc90-e82a-4f64-967a-fd3095bdd027.webp" alt="Сертификат об успешном прохождении обучения по программе "Разработка и проведение бизнес-тренингов""><p class="block-caption">Сертификат об успешном прохождении обучения по программе "Разработка и проведение бизнес-тренингов"</p></div>
+    </section>
+    <section id="section-63" class="portfolio-section" style="display:none">
+      <h2 class="section-heading">Я гражданин</h2>
+      <div class="block-text">Участие нашей группы в междугрупповых соревнованиях</div>
+
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
