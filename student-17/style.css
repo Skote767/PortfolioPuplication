@@ -12,7 +12,7 @@ body {
     padding: 2rem 3rem;
     background: rgba(255,255,255,0.85);
     backdrop-filter: blur(6px);
-    border-bottom: 3px solid #e11d48;
+    border-bottom: 3px solid #ea580c;
 }
 .portfolio-name { font-size: 1.8rem; font-weight: 700; color: #1a1a2e; }
 .portfolio-sub  { color: #6b7280; font-size: 0.95rem; margin-top: 0.25rem; }
@@ -39,8 +39,8 @@ body {
     font-family: inherit;
     transition: all 0.15s;
 }
-.nav-btn:hover { color: #e11d48; }
-.nav-btn.active { color: #e11d48; border-bottom-color: #e11d48; font-weight: 600; }
+.nav-btn:hover { color: #ea580c; }
+.nav-btn.active { color: #ea580c; border-bottom-color: #ea580c; font-weight: 600; }
 
 .portfolio-content {
     max-width: 800px;
@@ -54,9 +54,9 @@ body {
 .section-heading {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #e11d48;
+    color: #ea580c;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #e11d48;
+    border-bottom: 2px solid #ea580c;
     margin-bottom: 1rem;
 }
 
@@ -99,7 +99,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 .link-label { font-size: 0.9rem; font-weight: 600; color: #374151; margin-bottom: 0.4rem; }
-.block-link a { color: #e11d48; text-decoration: none; word-break: break-all; }
+.block-link a { color: #ea580c; text-decoration: none; word-break: break-all; }
 .block-link a:hover { text-decoration: underline; }
 
 /* Документы */
@@ -117,7 +117,7 @@ body {
 .doc-name { font-weight: 600; color: #1a1a2e; word-break: break-word; }
 .doc-caption { font-size: 0.85rem; color: #6b7280; margin-top: 0.25rem; }
 .btn-download {
-    background: #e11d48;
+    background: #ea580c;
     color: white;
     padding: 0.55rem 1.1rem;
     border-radius: 8px;
