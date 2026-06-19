@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио — popp@fmf.r</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background:#ffffff; font-family:'Arial', sans-serif">
+  <header class="portfolio-header">
+    <div><h1 class="portfolio-name">popp@fmf.r</h1>
+    <p class="portfolio-sub">Студенческое портфолио</p></div>
+  </header>
+  <nav class="portfolio-nav" id="main-nav">
+    <button class="nav-btn active" onclick="showSection('section-84', this)">О себе</button>
+    <button class="nav-btn" onclick="showSection('section-85', this)">Достижения</button>
+    <button class="nav-btn" onclick="showSection('section-86', this)">Работы</button>
+    <button class="nav-btn" onclick="showSection('section-87', this)">Документы</button>
+    <button class="nav-btn" onclick="showSection('section-88', this)">Я гражданин</button>
+  </nav>
+  <main class="portfolio-content">
+    <section id="section-84" class="portfolio-section" style="display:block">
+      <h2 class="section-heading">О себе</h2>
+      <div class="block-text" style="text-align:center;font-size:16px;color:#374151">erevrer</div>
+    </section>
+    <section id="section-85" class="portfolio-section" style="display:none">
+      <h2 class="section-heading">Достижения</h2>
+      <div class="block-image"><img src="images/139c2316-717c-44d4-af63-bf6b1854ec67.png" alt="12d"><p class="block-caption">12d</p></div>
+    </section>
+    <section id="section-86" class="portfolio-section" style="display:none">
+      <h2 class="section-heading">Работы</h2>
+      <div class="block-link"><p class="link-label">http://localhost:5133/constructor</p><a href="http://localhost:5133/constructor" target="_blank">🔗 http://localhost:5133/constructor</a></div>
+    </section>
+    <section id="section-87" class="portfolio-section" style="display:none">
+      <h2 class="section-heading">Документы</h2>
+      <div class="block-gallery" id="gallery-89"><div class="gallery-viewer"><div class="gallery-slide" data-index="0" style="display:block"><img src="images/4b336d81-06ad-4277-8501-20eec8867e00.jpg" alt="Фото 1"><p class="block-caption">2v</p></div><div class="gallery-slide" data-index="1" style="display:none"><img src="images/075e287e-0154-4736-985d-962ae8437174.jpg" alt="Фото 2"><p class="block-caption">wv</p></div><div class="gallery-slide" data-index="2" style="display:none"><img src="images/953abf0e-a2c1-4e93-8d8c-44e3efe875a5.png" alt="Фото 3"><p class="block-caption">vwe</p></div><div class="gallery-slide" data-index="3" style="display:none"><img src="images/24d08da1-5073-47d9-962d-6d91b44c8624.png" alt="Фото 4"><p class="block-caption">c</p></div><div class="gallery-slide" data-index="4" style="display:none"><img src="images/6c0c78ef-f4f3-4a24-ae28-d9cac9301f19.png" alt="Фото 5"><p class="block-caption">vwe</p></div></div><div class="gallery-controls"><button class="gallery-arrow" onclick="galleryMove('gallery-89', -1)">‹</button><span class="gallery-counter" id="gallery-89-counter">1 / 5</span><button class="gallery-arrow" onclick="galleryMove('gallery-89', 1)">›</button></div></div>
+    </section>
+    <section id="section-88" class="portfolio-section" style="display:none">
+      <h2 class="section-heading">Я гражданин</h2>
+      <div class="block-document"><div class="doc-info"><p class="doc-name">📎 scrcpy-win64-v4.0 (1).zip</p><p class="doc-caption">vwevewvw</p></div><a class="btn-download" href="documents/scrcpy-win64-v4.0_(1)_fdd3afc19231466496b8c2973db909e3.zip" download target="_blank">⬇ Скачать</a></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
