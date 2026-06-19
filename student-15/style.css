@@ -8,7 +8,6 @@ body {
     color: #374151;
 }
 
-/* Шапка */
 .portfolio-header {
     padding: 2rem 3rem;
     background: rgba(255,255,255,0.85);
@@ -18,7 +17,6 @@ body {
 .portfolio-name { font-size: 1.8rem; font-weight: 700; color: #1a1a2e; }
 .portfolio-sub  { color: #6b7280; font-size: 0.95rem; margin-top: 0.25rem; }
 
-/* Навигация */
 .portfolio-nav {
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +42,6 @@ body {
 .nav-btn:hover { color: #4f6ef7; }
 .nav-btn.active { color: #4f6ef7; border-bottom-color: #4f6ef7; font-weight: 600; }
 
-/* Основной контент */
 .portfolio-content {
     max-width: 800px;
     margin: 0 auto;
@@ -69,12 +66,10 @@ body {
     gap: 1.25rem;
 }
 
-/* Блоки */
 .block-text {
     background: rgba(255,255,255,0.85);
     border-radius: 12px;
     padding: 1.25rem 1.5rem;
-    font-size: 1rem;
     line-height: 1.7;
     white-space: pre-wrap;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -86,10 +81,8 @@ body {
     box-shadow: 0 2px 12px rgba(0,0,0,0.1);
     background: white;
 }
-.block-image img {
-    width: 100%;
-    display: block;
-}
+.block-image img { width: 100%; display: block; }
+
 .block-caption {
     padding: 0.6rem 1rem;
     font-size: 0.85rem;
@@ -105,22 +98,67 @@ body {
     padding: 1rem 1.5rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
-.link-label {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #374151;
-    margin-bottom: 0.4rem;
-}
-.block-link a {
-    color: #4f6ef7;
-    text-decoration: none;
-    word-break: break-all;
-}
+.link-label { font-size: 0.9rem; font-weight: 600; color: #374151; margin-bottom: 0.4rem; }
+.block-link a { color: #4f6ef7; text-decoration: none; word-break: break-all; }
 .block-link a:hover { text-decoration: underline; }
 
-/* Адаптив */
+/* Документы */
+.block-document {
+    background: rgba(255,255,255,0.85);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.doc-name { font-weight: 600; color: #1a1a2e; word-break: break-word; }
+.doc-caption { font-size: 0.85rem; color: #6b7280; margin-top: 0.25rem; }
+.btn-download {
+    background: #4f6ef7;
+    color: white;
+    padding: 0.55rem 1.1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+/* Галерея */
+.block-gallery {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+.gallery-viewer { position: relative; }
+.gallery-slide img { width: 100%; display: block; max-height: 480px; object-fit: contain; background: #f9fafb; }
+.gallery-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: white;
+}
+.gallery-arrow {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid #e5e7eb;
+    background: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+.gallery-arrow:hover { background: #f3f4f6; }
+.gallery-counter { font-size: 0.85rem; color: #6b7280; min-width: 50px; text-align: center; }
+
 @media (max-width: 600px) {
     .portfolio-header { padding: 1.5rem; }
     .portfolio-content { padding: 1.5rem 1rem; }
     .portfolio-name { font-size: 1.4rem; }
+    .block-document { flex-direction: column; align-items: flex-start; }
+    .btn-download { width: 100%; text-align: center; }
 }
